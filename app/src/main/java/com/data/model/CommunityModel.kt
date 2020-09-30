@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 @Parcelize
-data class GoogleEventModel(
+data class CommunityModel(
     val name: String,
     val description: String,
     val banner: String,

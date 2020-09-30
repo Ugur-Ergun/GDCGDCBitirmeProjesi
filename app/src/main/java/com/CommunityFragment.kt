@@ -12,13 +12,13 @@ import kotlinx.android.synthetic.main.fragment_event.*
 import kotlinx.coroutines.launch
 
 
-class EventFragment : Fragment(R.layout.fragment_event) {
+class CommunityFragment : Fragment(R.layout.fragment_event) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         lifecycleScope.launch {
             val response = RetrofitProvider.googleEventApi.getTopHeadlines()
             recycleViewEvent.adapter = EventAdapter(response) {
-                val direction = EventFragmentDirections.actionEventFragmentToDetailFragment(it)
+                val direction = CommunityFragmentDirections.actionEventFragmentToDetailFragment(it)
                 findNavController().navigate(direction)
             }
         }

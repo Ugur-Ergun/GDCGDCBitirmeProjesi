@@ -5,14 +5,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import com.data.model.GoogleEventModel
+import com.data.model.CommunityModel
 import com.example.gdcbitirmeprojesi.R
 import kotlinx.android.synthetic.main.item_event.view.*
 
 class EventAdapter(
-    private val eventList: MutableList<GoogleEventModel>,
+    private val eventList: MutableList<CommunityModel>,
     //private val bannerList: MutableList<String>,
-    private val onClick: (GoogleEventModel) -> Unit
+    private val onClick: (CommunityModel) -> Unit
 ) :
     RecyclerView.Adapter<EventViewHolder>() {
 
@@ -34,7 +34,7 @@ fun ViewGroup.inflate(layoutId: Int): View {
 }
 
 class EventViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-    fun bind(event: GoogleEventModel, onClick: (GoogleEventModel) -> Unit) {
+    fun bind(event: CommunityModel, onClick: (CommunityModel) -> Unit) {
         itemView.imageView.load(event.banner)
 
         itemView.setOnClickListener {
