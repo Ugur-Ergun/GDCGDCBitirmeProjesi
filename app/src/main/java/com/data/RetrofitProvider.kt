@@ -18,5 +18,5 @@ object RetrofitProvider {
         }.asConverterFactory(contentType))
         .build()
 
-    val googleEventApi = retrofit.create<GoogleCommunityApi>()
+    val googleCommunityApi = retrofit.create<GoogleCommunityApi>()
 }

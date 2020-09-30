@@ -9,9 +9,9 @@
         android:id="@+id/eventFragment"
         android:name="com.CommunityFragment"
         android:label="fragment_event"
-        tools:layout="@layout/fragment_event">
+        tools:layout="@layout/fragment_community">
         <action
-            android:id="@+id/action_eventFragment_to_detailFragment"
+            android:id="@+id/action_communityFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
     </fragment>
     <fragment

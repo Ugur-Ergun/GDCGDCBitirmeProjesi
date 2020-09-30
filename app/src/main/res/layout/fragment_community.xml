@@ -6,11 +6,11 @@
     tools:context="com.CommunityFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleViewEvent"
+        android:id="@+id/recycleViewCommunity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_event" />
+        tools:listitem="@layout/item_community" />
 
 </FrameLayout>
